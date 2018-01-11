@@ -53,58 +53,17 @@
 		nav{position: fixed;top:0;left: 0;z-index: 1000;line-height: 40px;width:100%;background-color: #d2d4d5;opacity: 0.5;overflow: hidden;}
 		nav ul li{margin-right: 2%;}
 		nav ul li a{text-decoration: none;color: #333;}
-		#container,.sections,.section{
-
-			height: 100%;
-			position: relative;
-		}
-		#section0,
-		#section1,
-		#section2,
-		#section3,
-		#section4{
-			background-color: #000;
-			background-size: cover;
-			background-position: 50% 50%;
-		}
-		#section0{
-			background-image: url(images/1.jpg);
-			color: #CCFF99;
-			text-shadow:1px 1px 1px #333;
-		}
-		#section1{
-			color: #fff;
-			text-shadow:1px 1px 1px #333;
-			background-image: url(images/2.jpg);
-		}
-		#section2{
-			background-image: url(images/3.jpg);
-			color: #fff;
-			text-shadow:1px 1px 1px #666;
-		}
-		#section3{
-			color: #008283;
-			background-image: url(images/4.jpg);
-			text-shadow:1px 1px 1px #fff;
-		}
-		#section4{
-			color: #008283;
-			background-image: url(images/2.jpg);
-			text-shadow:1px 1px 1px #fff;
-		}
-		#section2{
-			color: #666;
-		}
-		.left{
-			float: left;
-		}
-		.right{
-			float: right;
-		}
-		h1{
-			font-size: 4em;
-			font-weight: normal;
-		}
+		#container,.sections,.section{height: 100%;position: relative;}
+		#section0,#section1,#section2,#section3,#section4{background-size: cover;background-position: 50% 50%;}
+		#section0{background-image: url(images/1.jpg);color: #CCFF99;text-shadow:1px 1px 1px #333;}
+		#section1{color: #fff;text-shadow:1px 1px 1px #333;background-image: url(images/2.jpg);}
+		#section2{background-image: url(images/3.jpg);color: #fff;text-shadow:1px 1px 1px #666;}
+		#section3{color: #008283;background-image: url(images/4.jpg);text-shadow:1px 1px 1px #fff;}
+		#section4{color: #008283;background-image: url(images/2.jpg);text-shadow:1px 1px 1px #fff;}
+		#section2{color: #666;}
+		.left{float: left;}
+		.right{float: right;}
+		h1{font-size: 4em;font-weight: normal;}
 		#section2 span{color: #f00;}
 		.intro{
 			position: absolute;
@@ -122,80 +81,28 @@
 			right: 10px;
 			top: 50%;
 		}
-		.horizontal.pages{
-			left: 50%;
-			bottom: 10px;
-		}
-		.pages li{
-			width: 8px;
-			height: 8px;
-			border-radius: 50%;
-			background: #fff;
-			margin: 10px 5px;
-			cursor: pointer;
-		}
-		.horizontal.pages li{
-			display: inline-block;
-			vertical-align: middle;
-		}
-		.pages li.active{
-			width: 14px;
-			height: 14px;
-			border: 2px solid #FFFE00;
-			background: none;
-			margin-left: 0;
-		}
-		#section0 .title{
-			-webkit-transform: translateX(-100%);
-			transform: translateX(-100%);
-			-webkit-animation: sectitle0 1s ease-in-out 100ms forwards;
-			animation: sectitle0 1s ease-in-out 100ms forwards;
-		}
-		#section0 .container div{
-			-webkit-transform: translateX(100%);
-			transform: translateX(100%);
-			-webkit-animation: sec0 1s ease-in-out 100ms forwards;
-			animation: sec0 1s ease-in-out 100ms forwards;
-		}
+		.horizontal.pages{left: 50%;bottom: 10px;}
+		.pages li{width: 8px;height: 8px;border-radius: 50%;background: #fff;margin: 10px 5px;cursor: pointer;}
+		.horizontal.pages li{display: inline-block;vertical-align: middle;}
+		.pages li.active{width: 14px;height: 14px;border: 2px solid #FFFE00;background: none;margin-left: 0;}
+		#section0 .title{-webkit-transform: translateX(-100%);transform: translateX(-100%);-webkit-animation: sectitle0 1s ease-in-out 100ms forwards;animation: sectitle0 1s ease-in-out 100ms forwards;}
+		#section0 .container div{-webkit-transform: translateX(100%);transform: translateX(100%);
+			-webkit-animation: sec0 1s ease-in-out 100ms forwards;animation: sec0 1s ease-in-out 100ms forwards;}
 		@-webkit-keyframes sectitle0{
-			0%{
-				-webkit-transform: translateX(-100%);
-				transform: translateX(-100%);
-			}
-			100%{
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
+			0%{-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+			100%{-webkit-transform: translateX(0);transform: translateX(0);
 			}
 		}
 		@keyframes sectitle0{
-			0%{
-				-webkit-transform: translateX(-100%);
-				transform: translateX(-100%);
-			}
-			100%{
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
-			}
-		}
+			0%{-webkit-transform: translateX(-100%);transform: translateX(-100%);}
+			100%{-webkit-transform: translateX(0);transform: translateX(0);}}
 		@-webkit-keyframes sec0{
-			0%{
-				-webkit-transform: translateX(100%);
-				transform: translateX(100%);
-			}
-			100%{
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
-			}
+			0%{-webkit-transform: translateX(100%);transform: translateX(100%);}
+			100%{-webkit-transform: translateX(0);transform: translateX(0);}
 		}
 		@keyframes sec0{
-			0%{
-				-webkit-transform: translateX(100%);
-				transform: translateX(100%);
-			}
-			100%{
-				-webkit-transform: translateX(0);
-				transform: translateX(0);
-			}
+			0%{-webkit-transform: translateX(100%);transform: translateX(100%);}
+			100%{-webkit-transform: translateX(0);transform: translateX(0);}
 		}
 		.con-nav{position:absolute;bottom:0;left:50%;margin-left:-10%; width:20%;height: 14px;line-height: 20px;}
 		.about div{border: 2px dashed #CCC;height: 160px;width: 160px;border-radius: 50%;margin:10% 2%;position: relative;}
@@ -267,7 +174,7 @@
 							<span>姓名/张雨夜</span>
 						</div>
 						<div class="text-center left" style="border:none">
-							<img src="../pc/images/me.png">
+							<img src="http://chuantu.biz/t6/202/1515661285x-1404817593.png">
 						</div>
 						<div class="text-center left">
 							<span>学历/本科</span>
